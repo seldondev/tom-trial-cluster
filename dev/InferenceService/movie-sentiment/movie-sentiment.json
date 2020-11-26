@@ -1,0 +1,26 @@
+{
+    "kind": "InferenceService",
+    "apiVersion": "serving.kubeflow.org/v1alpha2",
+    "metadata": {
+        "name": "movie-sentiment",
+        "namespace": "dev",
+        "creationTimestamp": null,
+        "labels": {
+            "fluentd": "true"
+        }
+    },
+    "spec": {
+        "default": {
+            "predictor": {
+                "sklearn": {
+                    "storageUri": "gs://seldon-models/sklearn/moviesentiment",
+                    "resources": {}
+                },
+                "logger": {
+                    "mode": "all"
+                }
+            }
+        }
+    },
+    "status": {}
+}

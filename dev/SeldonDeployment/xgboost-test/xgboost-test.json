@@ -64,15 +64,7 @@
                     "version": "default"
                 },
                 "svcOrchSpec": {},
-                "traffic": 100,
-                "explainer": {
-                    "type": "AnchorTabular",
-                    "modelUri": "gs://tom-seldon-examples/xgboost/xgboost-explainer-0.1",
-                    "containerSpec": {
-                        "name": "",
-                        "resources": {}
-                    }
-                }
+                "traffic": 100
             }
         ],
         "annotations": {
